@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Portfolio | Мои работы</title>
+    <link rel="stylesheet" href="main.min.css">
+  </head>
+  <body>
+    <div class="preloader" id="preloader">
+      <div class="preloader__block">
+        <div class="preloader-ball"></div>
+        <div class="preloader-line"></div>
+        <div class="preloader__percent">0%</div>
+      </div>
+    </div>
+    <div class="wrapper" id="wrapper">
+      <header class="header">
+        <div class="header__background header__background--height">
+          <div class="header__line">
+            <div class="social">
+              <ul class="social__list">
+                <li class="social__item"><a class="social__link" href="https://vk.com/id189019453">
+                    <svg class="social__icon social__icon--fill">
+                      <use xlink:href="./assets/images/icons/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="https://github.com/RitaMitina0">
+                    <svg class="social__icon social__icon--fill">
+                      <use xlink:href="./assets/images/icons/sprite.svg#github"></use>
+                    </svg></a></li>
+                <li class="social__item"> <a class="social__link" href="#">
+                    <svg class="social__icon social__icon--fill">
+                      <use xlink:href="./assets/images/icons/sprite.svg#in"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+            <button class="hamburger"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+          </div>
+          <div class="back-vector main-back-vector">
+            <svg class="vector-pic">
+              <use xlink:href="./assets/images/icons/sprite.svg#stars1"></use>
+            </svg>
+            <div class="user__block">
+              <div class="user">
+                <div class="user__photo"> <img class="user-pht" src="assets/images/welcome-page/profile.jpg" alt="user-photo"/>
+                </div>
+                <div class="user__title">Маргарита Митина</div>
+                <div class="user__description">Личный сайт веб-разработчика</div>
+              </div>
+              <button class="arrow_down arrow_down--work" id="scroll-down">
+                <svg class="arrow arrow--fill">
+                  <use xlink:href="./assets/images/icons/sprite.svg#arrow_down"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="works">
+        <div class="triangles">
+          <svg class="triangle" viewbox="0 0 1000 85">
+            <polygon class="left left--work" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
+            <polygon class="right right--work" points="1000,0   1000,86   500,86   500,75.5"></polygon>
+          </svg>
+        </div>
+        <div class="back-vector back-vector--background">
+          <svg class="vector-pic vector-pic--rotate">
+            <use xlink:href="./assets/images/icons/sprite.svg#stars2"></use>
+          </svg>
+          <h1 class="title title--color">Мои работы</h1>
+        </div>
+        <div class="anchor">  </div>
+        <div class="works__columns">
+          <div id="slider-component"> </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="back-vector">
+          <svg class="vector-pic vector-pic--fill">
+            <use xlink:href="./assets/images/icons/sprite.svg#stars3"></use>
+          </svg>
+          <div class="about-title"> 
+            <h1 class="title title--fontsize">Что обо мне говорят</h1>
+          </div>
+        </div>
+        <div class="reviews__block">
+          <div class="commentators">
+            <div class="commentator">
+              <div class="commentator__photo"> <img class="commentator-pht" src="assets/images/work-page/dk.png" alt="commentator-photo"/>
+              </div>
+              <div class="commentator__description">Лишь базовые сценарии поведения пользователей, превозмогая сложившуюся непростую экономическую ситуацию, призваны к ответу.</div>
+              <div class="commentator__title">Дмитрий Ковальчук  <span>- основатель Loftschool        </span></div>
+            </div>
+            <div class="commentator">
+              <div class="commentator__photo"> <img class="commentator-pht" src="assets/images/work-page/vs.png" alt="commentator-photo"/>
+              </div>
+              <div class="commentator__description">В частности, современная методология разработки не дает нам иного выбора, кроме определения анализа существующих паттернов поведения!</div>
+              <div class="commentator__title">Владимир Сабанцев<span>- преподаватель</span></div>
+            </div>
+          </div>
+        </div>
+        <form class="form-connecting" id="form-connecting">
+          <div class="form__content">
+            <div class="subtitle subtitle--form">связаться со мной</div>
+            <div class="form__rows">
+              <div class="form__row">
+                <label class="form__row-content">
+                  <input class="form-input" type="text" name="name" id="name" placeholder="Ваше имя">
+                  <div class="error"> </div>
+                </label>
+              </div>
+              <div class="form__row"> 
+                <label class="form__row--content">
+                  <input class="form-input" type="email" name="email" id="email" placeholder="Ваш email">
+                  <div class="error"></div>
+                </label>
+              </div>
+              <div class="form__row">
+                <label class="form__row--content">
+                  <input class="form-input form-input--message" type="text" name="message" id="msg" placeholder="Ваше сообщение">
+                  <div class="error"></div>
+                </label>
+              </div>
+            </div>
+            <div class="form__button">
+              <button class="form-btn form-btn--send" type="submit" id="send-btn">Отправить</button>
+              <button class="form-btn form-btn--reset" type="reset">Очистить</button>
+            </div>
+          </div>
+          <div class="form-blur"></div>
+        </form>
+        <button class="arrow_down" id="scroll-reviews">
+          <svg class="arrow arrow--fill">
+            <use xlink:href="./assets/images/icons/sprite.svg#arrow_down"></use>
+          </svg>
+        </button>
+      </section>
+      <footer class="footer footer--uniform">
+        <div class="footer__content">
+          <div class="footer__block">
+            <div class="block__note">
+              <p class="note__text">Этот сайт сделан в рамках обучения в Школе онлайн образования LoftSchool.    </p>
+            </div>
+          </div>
+          <div class="footer__union">
+            <div class="footer__block">
+              <div class="footer__profile">
+                <ul class="profile__list">
+                  <li class="profile__item"><a class="profile__link" href="work.html">Мои работы</a></li>
+                  <li class="profile__item"><a class="profile__link" href="about.html">Обо мне</a></li>
+                  <li class="profile__item"><a class="profile__link" href="blog.html">Блог</a></li>
+                  <li class="profile__item"><a class="profile__link" href="index.html">Авторизация</a></li>
+                </ul>
+              </div>
+              <div class="social">
+                <ul class="social__list">
+                  <li class="social__item"><a class="social__link" href="#">
+                      <svg class="social__icon social__icon--fill__gray">
+                        <use xlink:href="./assets/images/icons/sprite.svg#vk"></use>
+                      </svg></a></li>
+                  <li class="social__item"><a class="social__link" href="#">
+                      <svg class="social__icon social__icon--fill__gray">
+                        <use xlink:href="./assets/images/icons/sprite.svg#github"></use>
+                      </svg></a></li>
+                  <li class="social__item"> <a class="social__link" href="#">
+                      <svg class="social__icon social__icon--fill__gray">
+                        <use xlink:href="./assets/images/icons/sprite.svg#in"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__block">
+              <div class="footer__contacts">
+                <ul class="contacts__list">
+                  <li class="contacts__item"><a class="contacts" href="skype:live:ace92cc9168c09ec">skype</a></li>
+                  <li class="contacts__item"><a class="contacts" href="mailto:rita.mitina.00@mail.ru">rita.mitina.00@mail.ru</a></li>
+                  <li class="contacts__item"><a class="contacts" href="tel:89778813845">+7(977)881-38-45</a></li>
+                  <li class="contacts__item"><span>г.Москва, ул.Мурановская, 21</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__description">© Маргарита Митина | создано с любовью в LoftSchool | 2018</div>
+      </footer>
+    </div>
+    <div class="hamburger--active">
+      <ul class="hamburger__list">
+        <li class="hamburger__item"><a class="hamburger__link" href="work.html">Мои работы</a></li>
+        <li class="hamburger__item"><a class="hamburger__link" href="blog.html">Блог</a></li>
+        <li class="hamburger__item"><a class="hamburger__link" href="about.html">Обо мне</a></li>
+        <li class="hamburger__item"><a class="hamburger__link" href="index.html">Авторизация      </a></li>
+      </ul>
+    </div>
+    <script type="text/x-template" id="skills-list">
+      <ul class="skills">
+        <li class="skills__item" v-for="skillsGroupObj in skills">
+          <skills-row :skillsGroupObj="skillsGroupObj"></skills-row>
+        </li>
+      </ul>
+    </script>
+    <script type="text/x-template" id="skills-item">
+      <div class="skills-row">
+        <div class="skills-row__title">{{skillsGroupObj.skillsGroup}}</div>
+        <ul class="skills">
+          <li class="skills__item" v-for="skillPercentage,skillTitle in skillsGroupObj.skills">
+            <skill :skillPercentage="skillPercentage" :skillTitle="skillTitle"></skill>
+          </li>
+        </ul>
+      </div>
+    </script>
+    <script type="text/x-template" id="skill">
+      <div class="skill">
+        <svg class="skill__figure" viewBox="0 0 100 100" preverseAspectRatio="none">
+          <circle class="skill__circle skill__circle--under" cx="50" cy="50" r="40"></circle>
+          <circle class="skill__circle skill__circle--above" cx="50" cy="50" r="40" ref="circle"></circle>
+        </svg>
+        <div class="skill-title">{{skillTitle}}</div>
+      </div>
+    </script>
+    <script type="text/x-template" id="slider-root">
+      <div class="slider">
+        <info :work="currentWork"></info>
+        <display :work="currentWork"></display>
+        <btns @slide="handleSlide" :works="works" :index="currentIndex"></btns>
+      </div>
+    </script>
+    <script type="text/x-template" id="slider-info">
+      <div class="works__title">
+        <div class="subtitle subtitle--uppercase">{{work.title}}</div>
+        <div class="desc">{{work.skills}}</div>
+        <div class="loftschool-button"><a class="loftschool-btn" href="https://loftschool.com">Посмотреть сайт
+            <svg class="link-pic link-pic--margin">
+              <use xlink:href="./assets/images/icons/sprite.svg#link"></use>
+            </svg></a></div>
+      </div>
+    </script>
+    <script type="text/x-template" id="slider-display">
+      <div class="display">
+        <div class="main-work"><img class="main-work--pht" :src="work.photo" alt="ff"></div>
+      </div>
+    </script>
+    <script type="text/x-template" id="slider-btns">
+      <div class="block-works">
+        <div class="small-work__container">
+          <div class="button-container" @click="slide('prev')">
+            <div class="button-img">
+              <svg class="arrow arrow--position">
+                <use xlink:href="./assets/images/icons/sprite.svg#arrow_down"></use>
+              </svg>
+            </div>
+          </div><img class="small-work--pht" :src="prevWorks[index].photo" alt="ff">
+        </div>
+        <div class="small-work__container">
+          <div class="button-container" @click="slide('next')">
+            <div class="button-img">
+              <svg class="arrow arrow--position arrow--rotate">
+                <use xlink:href="./assets/images/icons/sprite.svg#arrow_down"></use>
+              </svg>
+            </div>
+          </div><img class="small-work--pht" :src="nextWorks[index].photo" alt="ff">
+        </div>
+      </div>
+    </script>
+    <script type="text/x-template" id="user-form">
+      <div class="form__rows">
+        <div class="form__row">
+          <label class="form__row-content">
+            <div class="authorization-icon">
+              <svg class="auth-icon">
+                <use xlink:href="./assets/images/icons/sprite.svg#login"></use>
+              </svg>
+            </div>
+            <input class="form-input form-input--background" type="text" placeholder="Логин" v-model="user.name">
+          </label>
+        </div>
+        <div class="form__row"> 
+          <label class="form__row--content">
+            <div class="authorization-icon">
+              <svg class="auth-icon">
+                <use xlink:href="./assets/images/icons/sprite.svg#password"></use>
+              </svg>
+            </div>
+            <input class="form-input form-input--background" type="password" placeholder="Пароль" v-model="user.password">
+          </label>
+        </div>
+        <div class="form__buttons">
+          <div class="button__block">
+            <label class="form__buttons-checkbox">
+              <input class="form-input form-input--button" type="checkbox">
+              <div class="checkbox-visible"></div>
+              <div class="checkbox__title"><span>Я человек</span></div>
+            </label>
+          </div>
+          <div class="button__block">
+            <div class="button__rdb-title">Вы точно не робот?</div>
+            <div class="button">
+              <label class="form__buttons-radio">
+                <input class="form-input form-input--button" type="radio" name="radio-btn" value="0">
+                <div class="radio-visible"></div>
+                <div class="radio__title"><span>Да</span></div>
+              </label>
+              <label class="form__buttons-radio">
+                <input class="form-input form-input--button" type="radio" name="radio-btn" value="1">
+                <div class="radio-visible"></div>
+                <div class="radio__title"><span>Не уверен</span></div>
+              </label>
+            </div>
+          </div>
+          <div class="button__block button__blok--wrap">
+            <button class="form-btn form-btn--border-color" type="button" id="main-btn">На главную</button>
+            <button class="form-btn form-btn--border-color" type="button" @click="login">Войти          </button>
+          </div>
+        </div>
+      </div>
+    </script>
+    <script src="bootloader.bundle.js"></script>
+    <script src="vendor.bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="works.bundle.js"></script>
+  </body>
+</html>
